@@ -108,7 +108,7 @@ const SomePage = () => {
 
 ## For developers
 
-This package build with awesome library [TSDX](https://tsdx.io/), so you read docs and start to contribute or create own fork.
+This package build with awesome library [TSDX](https://tsdx.io/), so can you read docs and start to contribute or create own fork.
 
 The recommended workflow is to run TSDX in one terminal:
 
