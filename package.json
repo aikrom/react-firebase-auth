@@ -1,0 +1,68 @@
+{
+  "version": "0.1.0",
+  "name": "react-firebase-auth",
+  "author": "Ikrom Alizoda",
+  "license": "MIT",
+  "description": "A simple package that will help create a context with authorization through Firebase Auth Web without writing a lot of boilerplate code.",
+  "keywords": [
+    "react",
+    "firebase",
+    "authentication"
+  ],
+  "homepage": "https://github.org/rerset/react-firebase-auth",
+  "bugs": "https://github.com/rerset/react-firebase-auth/issues",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "module": "dist/react-firebase-auth.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint --fix",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {
+    "firebase": "^9.0.0-beta.2",
+    "react": ">=16"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@size-limit/preset-small-lib": "^4.11.0",
+    "@types/react": "^17.0.9",
+    "@types/react-dom": "^17.0.6",
+    "husky": "^6.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "size-limit": "^4.11.0",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.2.0",
+    "typescript": "^3.9.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rerset/react-firebase-auth.git"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "size-limit": [
+    {
+      "path": "dist/react-firebase-auth.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/react-firebase-auth.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  }
+}
