@@ -50,13 +50,12 @@ const SomePage = () => {
 
   return (
     <div>
-      {({ isAuthed }) => (
-        isAuthed ? (
+      {isAuthed ? (
           <div>Logged In</div>
         ) : (
           <button>Log In</button>
         )
-      )}
+      }
     </div>
   )
 }
@@ -78,13 +77,12 @@ const SomePage = () => {
 
   return (
     <div>
-      {({ isAuthed }) => (
-        isAuthed ? (
+      {isAuthed ? (
           <div>Logged In</div>
         ) : (
-          <button onClick={handleAuth}>Log In</button>
+          <button>Log In</button>
         )
-      )}
+      }
     </div>
   )
 }
